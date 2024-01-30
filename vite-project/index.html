@@ -19,7 +19,7 @@ import('https://cdn.jsdelivr.net/npm/@langchain/openai@0.0.13/+esm').then(async 
 console.log(Langchain)
 const llm = new Langchain.ChatOpenAI({
                         temperature:.7,
-                        openAIApiKey: "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"
+                        openAIApiKey: ""
                       });
 
 console.log("sending message")
@@ -37,7 +37,7 @@ import * as Langchain from 'https://esm.run/@langchain/openai';
 console.log(Langchain)
 const llm = new Langchain.ChatOpenAI({
                     temperature:.7,
-                    openAIApiKey: "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"
+                    openAIApiKey: ""
                         });
       console.log("sending message")
       const response = await llm.invoke("What is 5 + 5?");
