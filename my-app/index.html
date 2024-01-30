@@ -1,0 +1,41 @@
+
+
+<script type="module">
+import langchaincore from 'https://cdn.jsdelivr.net/npm/@langchain/core@0.1.18/+esm'
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LangChain Example (Module Version)</title>
+</head>
+<body>
+    <script type="module">
+        import langchaincore from 'https://cdn.jsdelivr.net/npm/@langchain/core@0.1.18/+esm'
+
+        async function createAndInvokeChain() {
+            try {
+                // Create a simple chain with an OpenAI LLM
+                const chain = await langchaincore.build({
+                    components: [
+                        langchain.llms.openai('text-davinci-003'),
+                    ],
+                    connections: [],
+                });
+
+                // Invoke the chain with a prompt
+                const response = await chain.run({
+                    prompt: 'Write a poem about a summer day',
+                });
+
+                console.log(response.data); // Output the LLM's response
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        createAndInvokeChain();
+    </script>
+</body>
+</html>
+

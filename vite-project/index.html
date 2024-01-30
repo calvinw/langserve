@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="" />
+
+
+  </head>
+  <body>
+    <div id="main">HELLO THERE</div>
+
+    <!--
+
+    <script>
+//import langchain from 'https://cdn.jsdelivr.net/npm/@langchain/openai@0.0.13/+esm'
+
+import('https://cdn.jsdelivr.net/npm/@langchain/openai@0.0.13/+esm').then(async (Langchain) => {
+console.log(Langchain)
+const llm = new Langchain.ChatOpenAI({
+                        temperature:.7,
+                        openAIApiKey: "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"
+                      });
+
+console.log("sending message")
+const response = await llm.invoke("What is the conjoint analysis?");
+console.log(response.text)
+
+  div=document.getElementById("main")
+  div.innerHTML = response.text
+
+    });
+    </script>
+    -->
+    <script type="module">
+import * as Langchain from 'https://esm.run/@langchain/openai';
+console.log(Langchain)
+const llm = new Langchain.ChatOpenAI({
+                    temperature:.7,
+                    openAIApiKey: "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"
+                        });
+      console.log("sending message")
+      const response = await llm.invoke("What is 5 + 5?");
+      console.log(response.text)
+
+    </script>
+  </body>
+</html>
