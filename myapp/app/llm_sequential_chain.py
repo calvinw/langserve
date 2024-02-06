@@ -3,9 +3,6 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.prompts import  FewShotChatMessagePromptTemplate
 
 from data_utils import read_csv_to_dicts
-from data_utils import convert_to_json
-
-# Lets read the training for our few shot examples
 examples = read_csv_to_dicts("app/training_data.csv")
 
 # This is a prompt template used to format each individual example.
@@ -29,13 +26,7 @@ final_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-model = ChatOpenAI(
-        temperature=0.0,
-        model="openchat/openchat-7b:free",
-        # model="mistralai/mistral-7b-instruct:free",
-        openai_api_key='',
-        openai_api_base="https://openrouter.ai/api/v1"
-    )
-
+model = ChatOpenAI(openai_api_key="",
+                    temperature=0)
 
 chain = final_prompt | model

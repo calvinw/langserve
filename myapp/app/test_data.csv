@@ -18,3 +18,7 @@ What is the left tail area when z = 1.78????,StdNormalLeftTail?z=1.78
 Find the area under the normal curve in the left tail when z=-0.56.,StdNormalLeftTail?z=-0.56
 Find the area under the curve for z > -0.56,StdNormalRightTail?z=-0.56
 Find the area under the normal curve between 23 and 29 when the standard deviation is 6 and the mean is 24.,NormalAreaBetween?mu=24&sigma=6&x1=23&x2=29
+"If we want the z-value for the bottom 20% of the data, what is that z-value?",BackwardsStdNormalLeft?area=0.2
+Find the z-value that yields a right tail area of 15%,BackwardsStdNormalRight?area=0.15
+Find the z-value that represents the lower 8% of the data.,BackwardsStdNormalLeft?area=0.08
+Find the z-value that gives the upper 7% of the data.,BackwardsStdNormalRight?area=0.07

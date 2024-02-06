@@ -9,9 +9,9 @@ Find the right tail area when z is -1.23,StdNormalRightTail?z=-1.23
 Find the left tail area when z is 0.67,StdNormalLeftTail?z=0.67
 Find the area under the standard normal curve when z is 1.23 up to 1.75.,StdNormalAreaBetween?z1=1.23&z2=1.75
 Find the z-value that results in a left tail area of 10%,BackwardsStdNormalLeft?area=0.1
-Find the z-value that results in a right tail area of 25%,BackwardsStdNormalLeft?area=0.25
+Find the z-value that results in a right tail area of 25%,BackwardsStdNormalRight?area=0.25
 Find the z-value that represents the bottom 30% of the data.,BackwardsStdNormalLeft?area=0.30
-Find the z-value that represents the top 5% of the data.,BackwardsStdNormalLeft?area=0.05
+Find the z-value that represents the top 5% of the data.,BackwardsStdNormalRight?area=0.05
 Suppose we want to find the upper 5% of our data for a normal distribution with a mean of 45 and a standard deviation of 12. ,SolveBackwardsRightTail?mu=45&sigma=12&area=0.05
 Suppose we want to find the lower 7% of our data for a normal distribution with a mean of 6 and a standard deviation of 3. ,SolveBackwardsLeftTail?mu=6&sigma=3&area=0.07
 Suppose we want to find the x-value that represents a right tail area of 15%. Suppose the mean is 30 and the standard deviation is 10.,SolveBackwardsRightTail?mu=30&sigma=10&area=0.15

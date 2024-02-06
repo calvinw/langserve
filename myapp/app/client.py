@@ -2,7 +2,7 @@ from langserve.client import RemoteRunnable
 from data_utils import read_csv_to_dicts
 
 #chain = RemoteRunnable("http://localhost:8000/openrouter")
-chain = RemoteRunnable("http://localhost:8000/together")
+chain = RemoteRunnable("http://localhost:8000/openrouter")
 
 # answer=chain.invoke({"input": "What is the value of z when x=3.3, the mean 4 and the standard deviatoin is 15"})
 # print(answer.content)
