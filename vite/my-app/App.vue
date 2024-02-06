@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, nextTick } from 'vue';
+import { RemoteRunnable } from "langchain/runnables/remote";
 
 export default {
   setup() {
@@ -15,17 +16,26 @@ export default {
     const htmlContent = ref(null);
 
     const submit = async () => {
-      // const apiResponse = await fetch('/api/endpoint', {
-      //   method: 'POST',
-      //   body: JSON.stringify({ text: text.value }),
-      // });
-      //
-      // const htmlUrl = await apiResponse.json();
-      //
-      // const htmlResponse = await fetch(htmlUrl);
-      // const html = await htmlResponse.text();
 
-      htmlContent.value = text.value;
+      const remoteChain = new RemoteRunnable({
+        url: "http://localhost:8000/gemini"
+      });
+      const result = await remoteChain.invoke({
+        "input": text.value
+      });
+
+      console.log(result.content)
+
+      const urlBase = ""
+      //const params = "NormalLeftTail?mu=30&sigma=4&x=25"
+      const url = urlBase + result.content
+
+      const htmlResponse = await fetch(url);
+      const html = await htmlResponse.text();
+      htmlContent.value = html;
+
+      await nextTick()
+      MathJax.typeset();
     };
 
     return { text, htmlContent, submit };

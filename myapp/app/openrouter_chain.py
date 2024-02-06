@@ -31,8 +31,7 @@ final_prompt = ChatPromptTemplate.from_messages(
 
 model = ChatOpenAI(
         temperature=0.0,
-#       model="openchat/openchat-7b",
-        model="mistralai/mistral-7b-instruct",
+        model="mistralai/mistral-7b-instruct:free",
         openai_api_key='',
         openai_api_base="https://openrouter.ai/api/v1"
     )

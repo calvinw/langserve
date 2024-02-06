@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "langchain": "^0.1.13",
     "vue": "^3.3.11"
   },
   "devDependencies": {

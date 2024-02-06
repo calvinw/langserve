@@ -31,8 +31,7 @@ final_prompt = ChatPromptTemplate.from_messages(
 
 model = ChatOpenAI(
         temperature=0.0,
-        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
-#       model="codellama/CodeLlama-7b-Instruct-hf",
+        model="mistralai/Mistral-7B-Instruct-v0.1",
         openai_api_key="",
         openai_api_base="https://api.together.xyz/v1/"
     )
