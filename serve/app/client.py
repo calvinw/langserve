@@ -9,6 +9,7 @@ chain = RemoteRunnable("http://localhost:8000/openrouter")
 
 
 questions = read_csv_to_dicts("app/test_data.csv")
+#questions = questions[:10]
 
 inputs = []
 outputs = []
@@ -18,7 +19,9 @@ for item in questions:
   outputs.append({"output": item["output"]})
 
 responses=chain.batch(inputs)
-print(responses)
+
+for response in responses:
+  print(response.content)
 
 #
 # # print(questions)

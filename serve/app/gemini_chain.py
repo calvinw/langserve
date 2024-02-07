@@ -1,9 +1,11 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.prompts import  FewShotChatMessagePromptTemplate
+import os
 
 from data_utils import read_csv_to_dicts
-from data_utils import convert_to_json
+
+from models import GOOGLE_MODEL
 
 # Lets read the training for our few shot examples
 examples = read_csv_to_dicts("app/training_data.csv")
@@ -29,13 +31,9 @@ final_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-model = ChatOpenAI(
-        temperature=0.0,
-        #model="openchat/openchat-7b:free",
-        model="mistralai/mistral-7b-instruct:free",
-        openai_api_key='',
-        openai_api_base="https://openrouter.ai/api/v1"
-    )
-
+model = ChatGoogleGenerativeAI(model=GOOGLE_MODEL,
+                              convert_system_message_to_human = True,
+                              temperature=0.0,
+                              google_api_key=os.environ["GOOGLE_API_KEY"])
 
 chain = final_prompt | model
