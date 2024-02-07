@@ -1,18 +1,20 @@
 input,output
-"Find the area under the normal curve when x&gt;34, the mean is 32 and the standard deviation is 5",NormalRightTail?mu=32&sigma=5&x=34
-"Find the area under the normal curve when x &lt; 34, the mean is 32 and the standard deviation is 5",NormalLeftTail?mu=32&sigma=5&x=34
-Find the area under the normal curve between 12 and 15 when the mean is 16 and the standard deviation is 5,NormalAreaBetween?mu=16&sigma=5&x1=12&x2=15
-"Find the z-value if x is 12, the mean is 14 and the standard deviation is 15.",ZValue?mu=14&sigma=15&x=12
-Find the area under the standard normal distribution that corresponds to  z less than 1.23,StdNormalLeftTail?z=1.23
-Find the area under the standard normal distribution with z greater than 2.2,StdNormalRightTail?z=2.2
-Find the right tail area when z is -1.23,StdNormalRightTail?z=-1.23
-Find the left tail area when z is 0.67,StdNormalLeftTail?z=0.67
-Find the area under the standard normal curve when z is 1.23 up to 1.75.,StdNormalAreaBetween?z1=1.23&z2=1.75
-Find the z-value that results in a left tail area of 10%,BackwardsStdNormalLeft?area=0.1
-Find the z-value that results in a right tail area of 25%,BackwardsStdNormalRight?area=0.25
-Find the z-value that represents the bottom 30% of the data.,BackwardsStdNormalLeft?area=0.30
-Find the z-value that represents the top 5% of the data.,BackwardsStdNormalRight?area=0.05
-Suppose we want to find the upper 5% of our data for a normal distribution with a mean of 45 and a standard deviation of 12. ,SolveBackwardsRightTail?mu=45&sigma=12&area=0.05
-Suppose we want to find the lower 7% of our data for a normal distribution with a mean of 6 and a standard deviation of 3. ,SolveBackwardsLeftTail?mu=6&sigma=3&area=0.07
-Suppose we want to find the x-value that represents a right tail area of 15%. Suppose the mean is 30 and the standard deviation is 10.,SolveBackwardsRightTail?mu=30&sigma=10&area=0.15
-Suppose we want to find the x-value that represents a left tail area of 2%. Suppose the mean is 50 and the standard deviation is 12.,SolveBackwardsLeftTail?mu=50&sigma=12&area=0.02
+"What is the area under the normal curve when x is greater than 23, the mean is 34 and the standard deviation is 12 ?",NormalRightTail
+"What is the area under the normal curve when x < 2.3, the mean is 3 and the standard deviation is 2?",NormalLeftTail
+Find the area between 25 and 28 when the mean is 29 and the standard deviation is 5,NormalAreaBetween
+"Find the z-value if x is 5, the mean is 4 and the standard deviation is 2.",ZValue
+"If x is 21, and the mean is 22 and the standard deviation is 5, find the z-value.",ZValue
+Find the area under the standard normal distribution with z greater than 0.12.,StdNormalRightTail
+Find the left tail area when z is 2.31,StdNormalLeftTail
+"If z = 2.1, find the right tail area for the standard normal distribution",StdNormalRightTail
+Find the area above z=1.95,StdNormalRightTail
+Find the area below z = -1.45,StdNormalLeftTail
+Find the area between x = 55 and x = 57 when the mean is 55 and the standard deviation is 3.,NormalAreaBetween
+"When z is between 1.09 and 1.28, find the area between and under the standard normal curve.",StdNormalAreaBetween
+"If z is -0.45, find the left tail area for the standard normal curve.",StdNormalLeftTail
+Find the right tail area under the standard normal curve when z is 2.15.,StdNormalRightTail
+What is the left tail area when z = 1.78????,StdNormalLeftTail
+"What is the z-value when the std deviation is 3, the mean is 4, and the x is 23. This is a great problem to try. Please give the z-value.",ZValue
+Find the area under the normal curve in the left tail when z=-0.56.,StdNormalLeftTail
+Find the area under the curve for z > -0.56,StdNormalRightTail
+Find the area under the normal curve between 23 and 29 when the standard deviation is 6 and the mean is 24.,NormalAreaBetween
