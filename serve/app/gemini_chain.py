@@ -25,7 +25,7 @@ few_shot_prompt = FewShotChatMessagePromptTemplate(
 
 final_prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "Here are some examples for you to follow. Only give the answer in the format like in these examples. Do not try to answer the question, just return the formatted string."),
+        ("system", "You are an expert at identifying the type of elementary statistics problems. Here are some examples for you to follow. Only give the output in the format like in these examples. Do not make up any problem types, only use the ones that are present in the examples."),
         few_shot_prompt,
         ("human", "{input}"),
     ]
