@@ -12,6 +12,8 @@ Find the z-value that results in a left tail area of 10%,BackwardsStdNormalLeft
 Find the z-value that results in a right tail area of 25%,BackwardsStdNormalRight
 Find the z-value that represents the bottom 30% of the data.,BackwardsStdNormalLeft
 Find the z-value that represents the top 5% of the data.,BackwardsStdNormalRight
+Find the z-value that represents the lower 3% of the data.,BackwardsStdNormalLeft
+Find the z-value that represents the upper 7% of the data.,BackwardsStdNormalRight
 Suppose we want to find the upper 5% of our data for a normal distribution with a mean of 45 and a standard deviation of 12. ,SolveBackwardsRightTail
 Suppose we want to find the lower 7% of our data for a normal distribution with a mean of 6 and a standard deviation of 3. ,SolveBackwardsLeftTail
 Suppose we want to find the x-value that represents a right tail area of 15%. Suppose the mean is 30 and the standard deviation is 10.,SolveBackwardsRightTail

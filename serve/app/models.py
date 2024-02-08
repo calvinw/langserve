@@ -1,7 +1,25 @@
 OPENAI_MODEL="gpt-3.5-turbo"
-TOGETHER_MODEL="mistralai/Mixtral-8x7B-Instruct-v0.1"
+
+#TOGETHER_MODEL="mistralai/Mistral-7B-v0.1"
+#TOGETHER_MODEL="togethercomputer/CodeLlama-13b-Instruct"
+#TOGETHER_MODEL="mistralai/Mixtral-8x7B-Instruct-v0.1"
+#below works flawlessly
+#TOGETHER_MODEL="DiscoResearch/DiscoLM-mixtral-8x7b-v2"
+#one wrong
+#TOGETHER_MODEL="mistralai/Mistral-7B-Instruct-v0.1"
+#below works flawlessly
+#TOGETHER_MODEL="Open-Orca/Mistral-7B-OpenOrca"
+#TOGETHER_MODEL="teknium/OpenHermes-2p5-Mistral-7B"
+#TOGETHER_MODEL="mistralai/Mistral-7B-Instruct-v0.1"
+#TOGETHER_MODEL="Qwen/Qwen1.5-7B-Chat"
+#TOGETHER_MODEL="Open-Orca/Mistral-7B-OpenOrca"
+#TOGETHER_MODEL="mistralai/Mistral-7B-Instruct-v0.1"
+TOGETHER_MODEL="Open-Orca/Mistral-7B-OpenOrca"
+
 GOOGLE_MODEL="gemini-pro"
+
 OPENROUTER_MODEL="nousresearch/nous-hermes-2-mixtral-8x7b-dpo"
+#OPENROUTER_MODEL="mistralai/mistral-7b-instruct"
 
 """
 As of 2-7-2024

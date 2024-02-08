@@ -26,10 +26,10 @@ testingUrl="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpouKwp0p_J_MiKN-0O
 download_csv(testingUrl, "app/test_data.csv")
 
 #Download the training (few shot)data from google spreadsheet
-#trainingUrl="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKHzmZ7UmKD_DjLbx5tSxIO-3VRyxiGrcs5ZehehZbZJbNwJF4STZDrCfvGEwjsdgQGWl9KafzxwLS/pub?gid=0&single=true&output=csv"
-#download_csv(trainingUrl, "app/training_data.csv")
+# trainingUrl="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKHzmZ7UmKD_DjLbx5tSxIO-3VRyxiGrcs5ZehehZbZJbNwJF4STZDrCfvGEwjsdgQGWl9KafzxwLS/pub?gid=0&single=true&output=csv"
+# download_csv(trainingUrl, "app/training_data.csv")
 
 #Download the testing data from google spreadsheet
-#testingUrl="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKHzmZ7UmKD_DjLbx5tSxIO-3VRyxiGrcs5ZehehZbZJbNwJF4STZDrCfvGEwjsdgQGWl9KafzxwLS/pub?gid=2071210157&single=true&output=csv"
-#download_csv(testingUrl, "app/test_data.csv")
+# testingUrl="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKHzmZ7UmKD_DjLbx5tSxIO-3VRyxiGrcs5ZehehZbZJbNwJF4STZDrCfvGEwjsdgQGWl9KafzxwLS/pub?gid=2071210157&single=true&output=csv"
+# download_csv(testingUrl, "app/test_data.csv")
 
